@@ -1,0 +1,303 @@
+*{
+margin:0;
+padding:0;
+}
+.header{
+	min-height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(funbank2.png);
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+
+.nav{
+	display:flex;
+	padding:2% 6%;
+	justify-content: space-between;
+	align-items:center;
+}
+.nav img{
+	width:150px;
+	height:80px;
+}
+
+.panel{
+	flex:1;
+	text-align:right;
+}
+.panel ul li{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+.panel ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+}
+.panel ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+}
+.panel ul li:hover::after{
+	width:100%;
+}
+
+.centerpanel{
+	width:90%;
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+}
+.centerpanel h1{
+	font-size:70px;
+}
+.centerpanel p{
+	margin: 10px 0px 40px;
+	font-size:15px;
+	color:white;
+}
+
+.homebutton{
+	display: inline-block;
+	text-decoration:none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size:13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.homebutton:hover{
+	border:1px solid red;
+	background: red;
+	transition:1s;
+}
+
+.content{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+
+.content h1{
+	font-size:36px;
+	font-weight:600px;
+}
+.content p{
+	color: gray;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+	
+}	
+
+
+.row{
+margin-top: 5%;
+display: flex;
+justify-content:space-between;
+}
+.contentcolumn{
+flex-basis:31%;
+background: #fff3f3;
+border-radius:10px;
+margin-bottom:5%;
+padding: 20px 12px;
+box-sizing: border-box;
+transition:0.5s;
+}
+
+h3{
+text-align: center;
+font-weight: 600;
+margin:10px 0px;
+}	
+
+.contentcolumn:hover{
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+}
+
+.newvid{
+	width:80%;
+	margin: auto;
+	text-align:center;
+	padding-top:50px;
+}
+.recentrow{
+	display:flex;
+	padding:10px;
+	margin:auto;
+	
+}
+
+.recentcolumn{
+	flex-basis:50%;
+	border-radius:10%
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+	
+}
+
+.recentcolumn img{
+	width:100%;
+	height:100%;
+	dispaly:block;
+}
+
+.colorlayer{
+	background:transparent;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	transition:0.5s;
+	
+}
+.colorlayer:hover{
+	background: rgba(0,0,220,0.4);
+}
+
+.colorlayer h3{
+	width:100%;
+	font-weight: 500;
+	color: white;
+	font-size:26px;
+	bottom:0;
+	left:50%;
+	transform:translatex(-50%);
+	position: absolute;
+	opacity:0;
+	transition: 0.5s;
+}
+
+.colorlayer:hover h3{
+	bottom:40%;	
+	opacity: 1;
+}
+
+
+
+
+.owners {
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}	
+
+.picture {
+	display: flex;
+	width:50%;
+	padding-left:31.5%;
+	padding-top:4%;
+}
+
+.picjpg {
+	flex-basis:50%;
+	border-radius:10px;
+	margin-bottom: 5%;
+	text-align:left;
+}
+.picjpg img{
+	width:50%;
+	border-radius:10px;
+	box-shadow:5px 5px 5px gray;
+}
+.picjpg h3{
+	padding-right:149;
+}
+
+.review{
+	width:60%;
+	margin:auto;
+	padding-top:100px;
+	text-align:center;
+	
+	
+}
+.reviewrow{
+	display:flex;
+}
+.reviewcolumn{
+	display:flex;
+	flex-basis:44%;
+	border-radius:10px;
+	margin-bottom:5%;
+	text-align:left;
+	background: #fff3f3;
+	padding:25px;
+	cursor:pointer;
+	
+}
+.reviewcolumn img{
+	height:50px;
+	margin-left:5px;
+	margin-right:30px;
+	border-radius:70px;
+}
+	
+.reviewcolumn p{
+padding:0px;
+}
+.reviewcolumn h3{
+margin-top:15px;
+text-align:left;
+}	
+
+.reviewcolumn .fa{
+	color:yellow;
+	
+}
+
+.contactus {
+	margin: 100px auto;
+	width: 89%;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(funbank.png);
+	background-position:center;
+	background-size:cover;
+	border-radius: 10px;
+	text-align:center;
+	padding:150px 0px;
+}
+	
+.contactus h1{
+	color:white;
+	margin-bottom: 40px;
+	padding:0px;
+}
+/*-------------------------------*/
+
+.footer{
+	width:100%;
+	text-align:center;
+	padding: 30px 0px; 	
+}
+.footer h1{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+.icons .fa{
+	//color: #f44336;
+	margin:0px 13px;
+	curson:pointer;
+	padding:18px 0;
+
+}
